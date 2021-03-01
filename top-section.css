@@ -7,6 +7,8 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: Montserrat;
+    width:100%;
+    height:100%;
 }
 
 
@@ -16,34 +18,37 @@ html, body {
 
 body {
     font-size:16px;
+    
 }
 
 .top-section {
     background-image: url(./img/nav-section.jpg);
     height: 900px;
-}
-
-.top-nav {
-    padding: 30px 10px;
     width:100%;
 }
 
-.main-nav {
-    overflow: hidden;
+.top-nav {
+    height: 100px;
+    width:100%;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    padding-right: 200px;
-    
     border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+}
+
+.main-nav {
+    width: fit-content;
+    display: flex;
+    padding-top: 38px;
+    margin-right:200px;
 }
 
 .main-nav a {
     color: #fff;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
+    padding-top: 0;
     text-decoration: none;
     font-size: 1rem;
-    padding-bottom:40px;
+    padding-bottom:2.5rem;
     border-bottom: 1px solid transparent;
 }
 
@@ -86,4 +91,5 @@ body {
     cursor:pointer;
     color:white;
     outline: none;
+    margin-top:20px;
 }
